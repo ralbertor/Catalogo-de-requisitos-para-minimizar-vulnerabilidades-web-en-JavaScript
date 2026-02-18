@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Inicio</title>
+</head>
+<body>
+  <% if (username) { %>
+    <h1>Bienvenido, <%= username %>!</h1>
+    <p><%= message || "" %></p>
+    <p><a href="/logout">Cerrar sesión</a></p>
+  <% } else { %>
+    <h1>Bienvenido, Invitado</h1>
+    <p><%= message || "" %></p>
+    <p><a href="/login">Iniciar sesión</a> | <a href="/register">Registrarse</a></p>
+  <% } %>
+
+</body>
+</html>

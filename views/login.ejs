@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .error { color: red; }
+    form div { margin-bottom: 10px; }
+  </style>
+  <!-- DOMPurify desde CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.10/purify.min.js"
+          integrity="sha512-3SWB2zLsv6N/40o2TmFb03bVB8qiIclVhtI6b/6ACwBGUPj7ynrZ3Unp6+ORxkFlp5uKa66EPoDqcuBPoFj8tw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+  <h1>Login</h1>
+  <% if (error) { %>
+    <p class="error"><%= error %></p>
+  <% } %>
+  <form id="loginForm" action="/login" method="POST">
+    <!-- Token CSRF -->
+    <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+
+    <div>
+      <label for="username">Usuario:</label>
+      <input type="text" id="username" name="username" required>
+    </div>
+    <div>
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <button type="submit">Iniciar Sesión</button>
+  </form>
+  <p><a href="/register">Ir a Registro</a></p>
+
+  <script>
+    const loginForm = document.getElementById('loginForm');
+    loginForm.addEventListener('submit', function(e) {
+      // Sanitizar el campo "Usuario" antes de enviar
+      const usernameInput = document.getElementById('username');
+      usernameInput.value = DOMPurify.sanitize(usernameInput.value);
+    });
+  </script>
+</body>
+</html>
