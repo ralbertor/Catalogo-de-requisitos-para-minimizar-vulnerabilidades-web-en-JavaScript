@@ -1,5 +1,5 @@
 # Catálogo de Requisitos para Minimizar Vulnerabilidades Web en JavaScript
-## 📌 Descripción del Proyecto
+## Descripción del Proyecto
 
 Este repositorio contiene el prototipo de validación técnica desarrollado en el marco del Trabajo Fin de Grado titulado:
 
@@ -19,7 +19,7 @@ y alineado con marcos de referencia como:
 
 **NIST SP 800-53**
 
-## 🎯 Objetivo del Repositorio
+## Objetivo del Repositorio
 
 Este repositorio no contiene únicamente código funcional, sino una implementación práctica de validación del catálogo de requisitos de seguridad propuesto en el TFG.
 
@@ -41,7 +41,7 @@ Mitigan vulnerabilidades frecuentes como:
 
 - Uso de dependencias vulnerables
 
-## 🧠 Marco Conceptual
+## Marco Conceptual
 
 El catálogo se fundamenta en los principios clásicos de seguridad:
 
@@ -63,7 +63,7 @@ Y organiza los requisitos en tres bloques principales:
 
 - Requisitos en despliegue y mantenimiento
 
-## 🛠 Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 El prototipo ha sido desarrollado con:
 
@@ -83,7 +83,7 @@ El prototipo ha sido desarrollado con:
 
 - Gestión segura de sesiones
 
-## 🔐 Medidas de Seguridad Implementadas en el Prototipo
+## Medidas de Seguridad Implementadas en el Prototipo
 
 El entorno implementa múltiples requisitos del catálogo, entre ellos:
 
@@ -133,7 +133,7 @@ El entorno implementa múltiples requisitos del catálogo, entre ellos:
 
   - Reducción de superficie de ataque
 
-## 🧪 Validación del Catálogo
+## Validación del Catálogo
 
 El catálogo fue validado mediante:
 
@@ -153,7 +153,7 @@ Los resultados confirmaron:
 
 - Aplicabilidad real en entornos de desarrollo
 
-## 🚀 Instalación y Ejecución
+## Instalación y Ejecución
 Requisitos previos
 
 Node.js (v18 o superior)
@@ -170,7 +170,8 @@ npm start`
 El servidor se iniciará en:
 
 `http://localhost:3000`
-## 📊 Alcance Académico
+
+## Alcance Académico
 
 - Este proyecto forma parte del Grado en Ingeniería Informática y constituye una contribución en el ámbito de:
 
@@ -190,7 +191,7 @@ El servidor se iniciará en:
 
   - Servir de base para futuras investigaciones
 
-## 🔮 Trabajo Futuro
+## Trabajo Futuro
 
 Las líneas de evolución incluyen:
 
@@ -202,12 +203,12 @@ Desarrollo de herramienta automatizada de verificación de requisitos.
 
 Extensión hacia APIs REST y GraphQL.
 
-## 👨‍🎓 Autor
+## Autor
 
 Alberto Robles Reina
 Grado en Ingeniería Informática
 Universidad de Murcia
 
-## 📄 Licencia
+## Licencia
 
 Este proyecto se distribuye con fines académicos y educativos.
